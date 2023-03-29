@@ -10,3 +10,4 @@
   Hilt used for dependency injection.
   Fully kotlin implemented.
   XML includes RecyclerView for content and CircularProgressIndicator to show data loading when last page is reached.
+  MVVM clean architecture implemented.
