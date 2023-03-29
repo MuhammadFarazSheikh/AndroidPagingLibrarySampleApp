@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+            name="topRatedMovie"
+            type="com.example.paginationlibrarysampleapp.domain.models.TopRatedMovie" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:paddingTop="15dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/imageViewMoviePoster"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="100dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/textViewLanguage"
+        android:text="@{@string/text_language+topRatedMovie.original_language}"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewMoviePoster"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/textViewTitle"
+        android:text="@{@string/text_title+topRatedMovie.original_title}"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewLanguage"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/textViewReleaseDate"
+        android:text="@{@string/text_release_date+topRatedMovie.release_date}"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:id="@+id/textViewOverview"
+        android:text="@{@string/text_overview+topRatedMovie.overview}"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewReleaseDate"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

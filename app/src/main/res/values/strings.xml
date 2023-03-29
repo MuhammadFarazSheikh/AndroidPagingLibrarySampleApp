@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PaginationLibrarySampleApp</string>
+    <string name="api_base_url">https://api.themoviedb.org/3/</string>
+    <string name="image_base_url">https://image.tmdb.org/t/p/w300</string>
+    <string name="text_language">Language:</string>
+    <string name="text_title">Title:</string>
+    <string name="text_release_date">Release Date:</string>
+    <string name="text_overview">Overview:\n</string>
+</resources>
